@@ -7,7 +7,7 @@ public class MulticastChatServer {
         throws Exception {
 
         //Default ort number we are going to use
-        int portnumber = 5000;
+        int portnumber = 5000;                      //Ändra
         if(args.length >= 1){
             portnumber = Integer.parseInt(args[0]);
         }
@@ -16,7 +16,22 @@ public class MulticastChatServer {
         MulticastSocket serverMulticastSocket = new MulticastSocket(portnumber);
         System.out.println("Multicastsocket is created at port " + portnumber);
 
-        // Determine the IP adress of a host, given the host name
+        // Determine the IP address of a host, given the host name
         InetAddress group = InetAddress.getByName("225.4.5.6");
+
+        // getByName - returns IP address of given host
+        serverMulticastSocket.joinGroup(group);
+        System.out.println("joinGroup method is called...");
+        boolean infinite = true;
+
+        // Continually receives data and prints them
+        while(infinite){
+            byte buf[] = new byte[1024];
+            DatagramPacket data = new DatagramPacket(buf, buf.length);
+            serverMulticastSocket.receive(data);
+            String msg = new String(data.getData()).trim();
+            System.out.println("Message received from client = " + msg);
+        }
+        serverMulticastSocket.close();
     }
 }

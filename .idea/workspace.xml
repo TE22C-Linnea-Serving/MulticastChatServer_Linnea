@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6010dc77-fd68-4ba5-9ae2-7504f128e85e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MulticastChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6010dc77-fd68-4ba5-9ae2-7504f128e85e" name="Changes" comment="Working on Server">
+      <change beforePath="$PROJECT_DIR$/src/MulticastChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MulticastChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +72,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746520946141</updated>
-      <workItem from="1746520947230" duration="608000" />
+      <workItem from="1746520947230" duration="908000" />
     </task>
+    <task id="LOCAL−00001" summary="Working on Server">
+      <option name="closed" value="true" />
+      <created>1746521609823</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1746521609824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working on Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on Server" />
   </component>
 </project>
