@@ -7,7 +7,7 @@ public class MulticastChatServer {
         throws Exception {
 
         //Default ort number we are going to use
-        int portnumber = 5000;                      //Ändra
+        int portnumber = 5008;
         if(args.length >= 1){
             portnumber = Integer.parseInt(args[0]);
         }
